@@ -26,12 +26,18 @@ class Circle():
         return Circle(self._radius * n)
 
     def __str__(self):
-        return f"""INFO DEL CÍRCULO:
+        return f"""
         Radio: {self.get_radius()}
-        Área: {self.get_area()}
-        Perímetro: {self.get_perimeter()}
+        Área: {round(self.get_area(), 2)}
+        Perímetro: {round(self.get_perimeter(), 2)}
         """
 
+# Primer circulo (antes de multiplicacion)
 circulo = Circle(5)
 
-print(circulo)
+# Segundo circulo, luego de la multiplicacion
+circulo2 = circulo * 4
+
+print(f"Información del primer círculo (pre multiplicación) {circulo}")
+
+print(f"Información del segundo círculo (post multiplicación) {circulo2}")
