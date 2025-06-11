@@ -1,17 +1,18 @@
 import math
 
+
 class Circle():
     def __init__(self, radius):
         if radius <= 0:
             raise ValueError("El radio debe ser mayor que 0.")
         self._radius = radius
-    
+
     def get_radius(self):
         return self._radius
 
     def set_radius(self, radius):
         if radius <= 0:
-            raise ValueError("El radio debe ser mayor que 0.")    
+            raise ValueError("El radio debe ser mayor que 0.")
         self._radius = radius
 
     def get_area(self):
@@ -31,6 +32,7 @@ class Circle():
         Área: {round(self.get_area(), 2)}
         Perímetro: {round(self.get_perimeter(), 2)}
         """
+
 
 # Primer circulo (antes de multiplicacion)
 circulo = Circle(5)

@@ -39,7 +39,8 @@ class CircleTestCases(unittest.TestCase):
         c = Circle(2)
         try:
             new_circle = c * 3
-            assert 6 == new_circle.get_radius(), f"Expected new circle with radius 6 but got {new_circle.get_radius()}"
+            assert 6 == new_circle.get_radius(
+            ), f"Expected new circle with radius 6 but got {new_circle.get_radius()}"
 
             with self.assertRaises(ValueError, msg="Multiplying with zero should raise a ValueError"):
                 c * 0
