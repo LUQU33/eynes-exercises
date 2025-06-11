@@ -15,11 +15,15 @@ def transpose(matrix):
     for i in range(rows):
         for j in range(columns):
             transpose_matrix[j][i] = matrix[i][j]
+    
+    return transpose_matrix
 
-    # Mostrar matriz transpuesta
-    for i in range(len(transpose_matrix)):
-        print(f"{transpose_matrix[i]}")
-
+# Matriz inicial
 matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-transpose(matriz)
+transpuesta = transpose(matriz)
+
+# Para mostrar por pantalla la transpuesta
+for i in range(len(transpuesta)):
+    print(f"{transpuesta[i]}")
+
