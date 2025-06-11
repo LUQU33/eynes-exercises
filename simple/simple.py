@@ -24,5 +24,7 @@ def sort_list(dicts):
     return dicts
 
 diccionarios = simple_list()
+diccionarios_ord = sort_list(diccionarios)
 
-print(sort_list(diccionarios))
+for i in range(len(diccionarios)):
+    print(f"DICCIONARIO[{i}]: {diccionarios_ord[i]}")
